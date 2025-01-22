@@ -1,0 +1,16 @@
+server:
+  port: 7001
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://placementdb.database.windows.net:1433;database=placementdb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: sqladmin
+    password: Microsoft@12
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+
+
